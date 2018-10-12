@@ -18,7 +18,6 @@ def integral(f, a, b, dx=1e-5):
     return S
 
 
-
-print('S=',  integral(lambda x: (sin(x))**2, 0, pi))
+print('S=',  integral(lambda x: (sin(x))**2/2, 0, pi))
 
 
