@@ -1,4 +1,5 @@
 f = open('input.txt', mode='r', encoding='utf-8')
+g = open('out.txt', mode='w', encoding='utf-8')
 
 #for line in f:
 #    print(line, end='')
@@ -11,7 +12,8 @@ for litera in text:
     D[litera] = D.get(litera, 0) + 1
     #print(litera)
 
-for litera in sorted(D.keys(), key=lambda k:D[k]):
-    print(litera, D[litera])
+for litera in sorted(D.keys(), key=lambda k:D[k], reverse=True):
+    print(litera, D[litera], file=g)
 
 f.close()
+g.close()
