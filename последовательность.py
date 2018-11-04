@@ -9,6 +9,7 @@ def function(n):
         i += 1
     return i
 
+
 for k in range(1,1000):
     print(k,function(k))
 
