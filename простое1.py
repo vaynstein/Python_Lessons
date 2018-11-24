@@ -15,7 +15,7 @@ def prime(n):
     return True
     
 def ferma(n):
-    return 2**(n-1)%n==1
+    return pow(2, n-1, n) == 1
 
 
 #if prime(n):
@@ -24,7 +24,7 @@ def ferma(n):
 #   print('составное',n)
 
 for k in range(2, 10000):
-    if prime(k):
+    if ferma(k) and not prime(k):
         print(k)
 
  

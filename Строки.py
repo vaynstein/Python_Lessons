@@ -4,12 +4,8 @@ while True:
     if a=='': break        
     A.append(a)
 
-A.sort(key=int)
+A.sort()
 
-#for c in range(len(A)-1, -1,-1):
-#    print(A[c])
+for c in A:
+    print(c)
     
-
-for c in A: print(c)    
-    
-        
