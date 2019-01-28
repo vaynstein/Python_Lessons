@@ -36,9 +36,12 @@ def ferma(n):
 def ferma2(n):
     return expmod(2, n-1, n) == 1
 
+def ferma3(n):
+    return pow(2, n-1, n) == 1
 
-for k in range(2, 100000):
-    if ferma2(k) and not prime(k):
+
+for k in range(2, 500000):
+    if ferma3(k) and not prime(k):
         print(k)
 
 print('Время выполнения: {} с'.format( round(time()-start, 3) ))
